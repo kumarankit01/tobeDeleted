@@ -28,7 +28,7 @@ public class LongestPalindromeN2 {
 			}
 		}
 		for (int i = 2; i < len-1; i++) {
-			for (int j = 0; j<len-i+1; j++) {
+			for (int j = 0; j < len-i+1; j++) {
 				if(temp.charAt(j) == temp.charAt(i+j-1) && check[i+1][i-1]){
 					check[i][i+j] = true;
 					pal_size = j+1;
