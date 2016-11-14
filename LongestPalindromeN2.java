@@ -3,18 +3,16 @@ package core;
 public class LongestPalindromeN2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		String temp = "banana";
+		String temp = "banananabab";
 		printLongestPalindrome(temp);
 
 	}
 
 	private static void printLongestPalindrome(String temp) {
-		// TODO Auto-generated method stub
 		int pal_size=1;
 		int pal_startPos = 0;
 		int len = temp.length();
-		boolean[][] check = new boolean[len-1][len-1];
+		boolean[][] check = new boolean[len][len];
 		for (int i = 0; i < len; i++) {
 			check[i][i] = true;
 		}
@@ -27,16 +25,15 @@ public class LongestPalindromeN2 {
 				check[i][i+1] = false;
 			}
 		}
-		for (int i = 2; i < len-1; i++) {
-			for (int j = 0; j < len-i+1; j++) {
-				if(temp.charAt(j) == temp.charAt(i+j-1) && check[i+1][i-1]){
+		for (int j = 2; j <len; j++) {
+			for (int i = 0; i < len-j; i++) {
+				if((temp.charAt(i) == temp.charAt(i+j)) && check[i+1][i+j-1]){
 					check[i][i+j] = true;
-					pal_size = j+1;
+					pal_size = i+j;
 					pal_startPos = i;
 				}
 			}
 		}
-
+		System.out.println(temp.substring(pal_startPos,pal_size+1));
 	}
-
 }
