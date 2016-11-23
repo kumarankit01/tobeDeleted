@@ -1,5 +1,4 @@
-package core;
-
+package practice.random;
 public class LongestPalindromeN2 {
 
 	public static void main(String[] args) {

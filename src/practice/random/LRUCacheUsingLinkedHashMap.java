@@ -13,7 +13,7 @@ automatically when new mappings are added to the map.
  * 
  * 
  */
-package practice.arrays;
+package practice.random;
 
 import java.util.LinkedHashMap;
 

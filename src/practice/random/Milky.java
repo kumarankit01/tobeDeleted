@@ -1,4 +1,4 @@
-package demo;
+package practice.random;
 
 import java.util.ArrayList;
 import java.util.BitSet;

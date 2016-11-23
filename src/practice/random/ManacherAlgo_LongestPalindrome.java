@@ -1,4 +1,4 @@
-package core;
+package practice.random;
 
 public class ManacherAlgo_LongestPalindrome {
 
