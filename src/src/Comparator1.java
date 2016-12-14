@@ -1,5 +1,7 @@
+package src;
 
-public class Comparator{
+
+public class Comparator1{
 
 	boolean compare(int a , int b){
 		if(a == b){

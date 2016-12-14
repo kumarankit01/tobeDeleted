@@ -1,3 +1,4 @@
+package src;
 public class IR{
 	static int test;
 	{
