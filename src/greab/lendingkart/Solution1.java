@@ -1,4 +1,4 @@
-package src;
+package greab.lendingkart;
 import java.util.HashMap;
 import java.util.Map;
 

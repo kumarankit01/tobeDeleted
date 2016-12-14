@@ -1,4 +1,4 @@
-package src;
+package greab.lendingkart;
 import java.util.Stack;
 
 public class ReverseStack {
