@@ -42,7 +42,7 @@ public class ManacherAlgo_LongestPalindrome {
 				p[i]++;
 			}
 			// check if new palindrome has crossed right boundary
-			if(p[i] +i > r){
+			if(p[i] + i > r){
 				r = p[i] + i;
 				c = i;
 			}

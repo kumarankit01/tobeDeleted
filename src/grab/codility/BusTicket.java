@@ -1,7 +1,5 @@
 package grab.codility;
 
-import java.util.Stack;
-
 public class BusTicket {
 
 	private static final int MONTH_PATH_PRICE = 25;
@@ -10,7 +8,6 @@ public class BusTicket {
 
 	public static void main(String[] args) {
 		int a[] = {1,2,4,5,6,7,8};
-		Stack<Integer> s = new Stack<>(); 
 		int cost = solution(0,a,0);
 		System.out.println(Math.min(cost, MONTH_PATH_PRICE));
 	}
